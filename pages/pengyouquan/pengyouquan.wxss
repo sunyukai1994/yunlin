@@ -1,0 +1,133 @@
+/* pages/pengyouquan/pengyouquan.wxss */
+.pengyouquan{
+  width: 100%;
+}
+.top image{
+  width: 100%;
+}
+.user{
+  margin-top: -50px;
+  margin-left: 480rpx;
+}
+.user image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 25rpx;
+}
+.user text{
+  position: relative;
+  top: -60rpx;
+  left: -20rpx;
+  color: #fff;
+  font-size: 35rpx;
+}
+.details{
+  width: 92%;
+  height: 350rpx auto;
+  margin: 20rpx auto;
+  border-bottom: 1rpx solid #ccc;
+}
+.details-head{
+  display: flex;
+  align-items: center;
+}
+.details-head image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 25rpx;
+}
+.details-head text{
+  margin-left: 30rpx;
+}
+.content{
+  width: 60%;
+  height: 200rpx;
+  margin-left: 130rpx;
+}
+.content image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 20rpx;
+  border-radius: 25rpx;
+}
+.time{
+  width: 78%;
+  height: 18px;
+  margin-left: 128rpx;
+  margin-top: -5rpx;
+  line-height: 20px;
+  font-size: 25rpx;
+}
+.time image{
+  float: right;
+  width: 25px;
+  height: 18px;
+}
+.pinglun{
+  width: 78%;
+  height: 18px auto;
+  margin: 10rpx 0 0 130rpx;
+  background-color: rgb(243,243,243);
+  font-size: 20rpx;
+  margin-bottom: 15rpx;
+  border-radius: 10rpx;
+}
+.pinglun view{
+  padding-left: 15rpx;
+  line-height: 1.8;
+}
+.hei{
+  /* display: flex; */
+  width: 300rpx;
+  height: 60rpx;
+  float: right;
+  background-color: #4c4c4c;
+  margin-right: 30rpx;
+  margin-top: -15rpx;
+  border-radius: 5px;
+}
+.hei .left{
+  /* border-left: 1px solid #444444; */
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 50%;
+  height: 60rpx;
+  /* background-color: cornflowerblue; */
+}
+.hei .right{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 60rpx;
+  /* background-color: cyan; */
+}
+.left image{
+  margin-left: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.right image{
+  margin-left: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.hei text{
+  color: #fff;
+  font-size: 33rpx;
+  margin-left: 10rpx;
+}
+.right text{
+  margin-left: 10rpx;
+}
+
+/* .btn{
+  display: flex;
+} */
+
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

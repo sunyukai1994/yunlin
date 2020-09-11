@@ -1,0 +1,99 @@
+/* pages/details/details.wxss */
+.details{
+  width: 100%;
+}
+.title{
+  width: 85%;
+  height: 200rpx;
+  margin: 0 auto;
+  font-size: 45rpx;
+  color: #242222;
+  font-weight: bold;
+}
+.time{
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin-top: -70rpx;
+  font-size: 30rpx;
+  color: #656060;
+}
+.text{
+  text-indent:2em;
+  width: 92%;
+  height: 400rpx auto;
+  margin: 30rpx auto;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+  font-size: 25rpx;
+  color: #494747;
+}
+.picture{
+  width: 92%;
+  height: 400rpx;
+  margin: 0rpx auto 20rpx;
+}
+.picture image{
+  width: 100%;
+  height: 100%;
+}
+.hot{
+  width: 95%;
+  height: 520rpx;
+  margin: 50rpx auto;
+}
+.hot-text{
+  display: flex;
+  width: 100%;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 40rpx;
+}
+.hot-right{
+  font-size: 40rpx;
+  color: #46778d;
+  margin-right: 20rpx;
+  margin-left: 57.5%;
+}
+.hot-image{
+  width: 25rpx;
+  height: 30rpx;
+  margin-top: 5rpx;
+}
+.hot-image image{
+  width: 100%;
+  height: 100%;
+}
+.name{
+  width: 100%;
+  height: 40rpx;
+  margin-top: 30rpx;
+  line-height: 40rpx;
+  color: #085977;
+  font-size: 30rpx;
+}
+.pinglun{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #ccc;
+  color: #414040;
+  font-size: 30rpx;
+}
+.right{
+  margin-right: 20rpx;
+  float: right;
+  color: #474646;
+}
+.look-over{
+  width: 60%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  margin: 75rpx auto 50rpx;
+  color: #085977;
+  font-size: 30rpx;
+  border: 1px solid #085977;
+}

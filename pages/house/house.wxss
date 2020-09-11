@@ -1,0 +1,167 @@
+/* pages/house/house.wxss */
+.house{
+  width: 100%;
+}
+.header{
+  width: 100%;
+  height: 220rpx;
+  background-color: #fff;
+  /* display: flex; */
+}
+.header-search{
+  width: 100%;
+  height: 50rpx auto;
+  display: flex;
+  background-color: #fff;
+}
+.fanhui{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 35rpx;
+  margin-left: 20rpx;
+  /* z-index: 1; */
+}
+.search{
+  width: 670rpx;
+  margin-left: 40rpx;
+  /* z-index: 0; */
+}
+.header-tab{
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  align-items: center;
+  font-size: 35rpx;
+  /* letter-spacing: 25rpx; */
+}
+.header-left-image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.default{
+  color: #646260;
+}
+.red{
+  color: #d7450b;
+  font-weight: bold;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.header-left-text{
+  /* color: #f10606; */
+  display: flex;
+}
+.header-zhixian{
+  width: 1rpx;
+  height: 50rpx;
+  border: 0.5rpx solid #535353;
+  margin: 0 auto;
+}
+.header-right-image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.header-right-text{
+  display: flex;
+}
+
+
+.result{
+  width: 100%;
+  height: 40rpx;
+  background-color: #f3f1f1;
+  display: flex;
+  font-size: 25rpx;
+  line-height: 1.6;
+  padding-left: 30rpx;
+}
+.shuzi{
+  color: #5090f0;
+}
+.details{
+  width: 100%;
+  height: 1400rpx auto;
+  /* background-color: aquamarine; */
+  /* display: flex; */
+}
+.details-dropdown{
+  border-bottom: 1rpx solid #bfbfbf;
+}
+.paixu{
+  width: 30rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+  margin-left: 60rpx;
+}
+.details-house{
+  width: 100%;
+  height: 220rpx;
+  margin-top: 35rpx;
+  display: flex;
+  /* background-color: #535353; */
+}
+.details-house-left{
+  width: 45%;
+  height: 220rpx;
+  /* background-color: #f10606; */
+}
+.details-house-left image{
+  width: 93%;
+  height: 100%;
+  float: right;
+  margin-right: 10rpx;
+}
+.details-house-right{
+  width: 55%;
+  height: 220rpx;
+  margin-left: 10rpx;
+  /* background-color: aqua; */
+}
+.details-house-title{
+  padding-top: 30rpx;
+  font-size: 35rpx;
+}
+.details-house-text{
+  display: flex;
+  padding-top: 50rpx;
+}
+/* .position{
+  display: flex;
+} */
+.position-area{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.position-one{
+  display: flex;
+  /* padding-top: 50rpx; */
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+.position-two{
+  width: 80rpx;
+  height: 35rpx;
+  text-align: center;
+  line-height: 1.7;
+  background-color: #e8eced;
+  border-radius: 10rpx;
+  margin-right: 5rpx;
+}
+.price{
+  margin-left: 22rpx;
+  color: #ff0000;
+  margin-top: 0rpx;
+  font-size: 45rpx;
+  letter-spacing: 0rpx;
+}
+.price text{
+  font-size: 20rpx;
+}

@@ -1,0 +1,51 @@
+<!--pages/details/details.wxml-->
+<view class="details">
+	<view class="title">
+		<text>习近平谈社区治理：提高社区效能的关键是加强党的领导</text>
+	</view>
+	<view class="time">
+		<text>2020-07-24  16:14   新华社</text>
+	</view>
+	<view class="text">
+		<text>【习近平谈社区治理：提高社区效能的关键是加强党的领导】23日下午，习近平总书记来到吉林省长春市宽城区团山街道长山花园社区党群服务中心，了解基层社会治理情况，并考察了依托社区而建的吉林长春社区干部学院。习近平指出，一个国家治理体系和治理能力的现代化水平很大程度上体现在基层。基础不牢，地动山摇。要不断夯实基层社会治理这个根基。提高社区治理效能，关键是加强党的领导。要推动党组织向基层延伸，把基层的工作做好，这样才能“任凭风浪起，稳坐钓鱼台”。</text>
+	</view>
+	<view class="picture">
+		<image src="../../images/详情1.gif" />
+	</view>
+	<view class="picture">
+		<image src="../../images/详情2.gif" />
+	</view>
+	<view class="text">
+		<text>【习近平：一定要把民族汽车品牌搞上去】23日下午，正在吉林省考察的习近平总书记来到中国一汽集团研发总院，走进实验室了解企业技术研发情况，并察看了“红旗”等自主品牌的最新款式整车产品。习近平说，看了一汽技术创新和自主品牌建设成果展示，感到眼前一亮。现在，国际上汽车制造业竞争很激烈，信息化、智能化等趋势不断发展，对我们来讲有危有机，危中有机。一定要把关键核心技术掌握在自己手里，我们要立这个志向，把民族汽车品牌搞上去。</text>
+	</view>
+	<view class="text">
+		<text>【习近平关心高校毕业生就业】23日下午，习近平总书记来到中国一汽集团研发总院实验室，了解集团新技术研发情况。听说现场有几位是今年刚毕业的大学生，习近平关切地询问他们是哪所学校毕业的？收入怎么样？来这里工作满意吗？企业负责人介绍，今年一汽集团共招聘了1115名应届高校毕业生，习近平听了十分高兴。他说，受疫情影响，今年高校毕业生、农民工等群体面临就业困难。各级党委和政府十分关心，将其作为重大民生工作任务，积极创造条件确保高校毕业生就业。广大高校毕业生也要改变择业观、就业观，找到自己的定位，投入踏踏实实的工作中，实现自己的人生理想。</text>
+	</view>
+	<view class="picture">
+		<image src="../../images/详情3.gif" />
+	</view>
+	<view class="hot">
+		<view class="hot-text" bindtap="on_comment_click">
+			<text style="color:#ce1111;">热门评论</text>
+			<text class="hot-right">评论</text>
+			<view class="hot-image">
+				<image src="../../images/setup-jiantou.gif" />
+			</view>
+		</view>
+		<view class="name">
+			咘咘咘
+		</view>
+		<view class="pinglun">
+			<text>提高社区效能的关键是加强党的领导</text>
+			<text class="right">18赞</text>
+		</view>
+		<view class="name">
+			咕咕咕
+		</view>
+		<view class="pinglun">
+			<text>中国加油</text>
+			<text class="right">36赞</text>
+			<view class="look-over">701人评论,100人参与</view>
+		</view>
+	</view>
+</view>

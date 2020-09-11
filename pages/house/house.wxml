@@ -1,0 +1,241 @@
+<!--pages/house/house.wxml-->
+<view class="house">
+	<!--  -->
+	<view class="header">
+		<view class="header-search">
+			<van-search custom-class="search" value="{{ value }}" shape="round" background="#fff" placeholder="请输入搜索关键词" />
+		</view>
+		<view class="header-tab">
+			<view class="header-left">
+				<view class="header-left-text {{selected?'red':'default'}}" bindtap="selected">
+					<image class="header-left-image" src="../../images/租房.png" wx:if="{{wy}}" bindtap="selected"></image> 
+					<image class="header-left-image" src="../../images/租房 (1).png" wx:else bindtap="selected"></image>
+					<view>租房</view>
+				</view>
+			</view>
+			<view class="header-zhixian"></view>
+			<view class="header-right-text {{selected1?'red':'default'}}" bindtap="selected1">
+				<image class="header-right-image" src="../../images/买房.png" wx:if="{{tc}}" bindtap="selected1"></image> 
+				<image class="header-left-image" src="../../images/买房(1).png" wx:else bindtap="selected1"></image>
+				<view>卖房</view>
+			</view>
+		</view>
+	</view>
+	<!-- 搜索结果 -->
+	<view class="result">
+		共有 <view class="shuzi">20</view> 个搜索结果
+	</view>
+	<!-- 详情 -->
+	<view class="details {{selected?'show':'hidden'}}">
+		<view class="details-dropdown">
+			<van-dropdown-menu>
+				<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option3 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option4 }}" />
+				<image class="paixu" src="../../images/排序.png"></image>
+			</van-dropdown-menu>
+		</view>
+		<view class="details-house" style="margin-top: 20rpx;">
+			<view class="details-house-left">
+				<image src="../../images/图层 1.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 1号楼3单元301</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">72㎡/东 南 北</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<view class="position-two">有车位</view>
+						</view>
+					</view>
+					<view class="price">1400<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 6.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">合租4居室 2号楼3单元301</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">16㎡/北</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:130rpx;">500<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 5.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 2号楼2单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">96㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:105rpx;">1000<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 4.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 5号楼2单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">68㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<view class="position-two">有车位</view>
+						</view>
+					</view>
+					<view class="price">1300<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house" style="margin-bottom:50rpx;">
+			<view class="details-house-left">
+				<image src="../../images/图层 7.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">合租 5号楼1单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">15㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:130rpx;">600<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="details {{selected1?'show':'hidden'}}">
+		<view class="details-dropdown">
+			<van-dropdown-menu>
+				<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option3 }}" />
+				<van-dropdown-item value="{{ value2 }}" options="{{ option4 }}" />
+				<image class="paixu" src="../../images/排序.png"></image>
+			</van-dropdown-menu>
+		</view>
+		<view class="details-house" style="margin-top: 20rpx;">
+			<view class="details-house-left">
+				<image src="../../images/图层 1.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 1号楼3单元301</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">72㎡/东 南 北</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<view class="position-two">有车位</view>
+						</view>
+					</view>
+					<view class="price">1400<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 6.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">合租4居室 2号楼3单元301</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">16㎡/北</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:130rpx;">500<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 5.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 2号楼2单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">96㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:105rpx;">1000<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house">
+			<view class="details-house-left">
+				<image src="../../images/图层 4.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">整租 5号楼2单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">68㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<view class="position-two">有车位</view>
+						</view>
+					</view>
+					<view class="price">1300<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+    <view class="details-house" style="margin-bottom:50rpx;">
+			<view class="details-house-left">
+				<image src="../../images/图层 7.jpg"></image>
+			</view>
+			<view class="details-house-right">
+				<view class="details-house-title">合租 5号楼1单元602</view>
+				<view class="details-house-text">
+					<view class="position">
+						<view class="position-area">15㎡/南</view>
+						<view class="position-one">
+							<view class="position-two">精装修</view>
+							<view class="position-two" style="width:60rpx;">新上</view>
+							<!-- <view class="position-two">有车位</view> -->
+						</view>
+					</view>
+					<view class="price" style="margin-left:130rpx;">600<text>元/月</text> </view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

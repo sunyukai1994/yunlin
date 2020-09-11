@@ -1,0 +1,146 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+	<!-- header头部 -->
+	<view class="header">
+		<view class="location">
+			<image class="location-image" src="../../images/位置.png"></image>
+			<!-- 地址 -->
+			<view class="city">
+				<topItem show="{{address?address:'邻里家园'}}"></topItem>
+			</view>
+		</view>
+		<view class="search">
+			<van-search custom-class="search" value="{{ value }}" shape="round" background="#fff" placeholder="瓜果蔬菜" />
+		</view>
+	</view>
+	<!-- 轮播图 -->
+	<swiper class="banner" indicator-active-color="#e60012" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+		<view>
+			<block wx:for="{{banner}}" wx:key="{{item.id}}">
+				<swiper-item>
+					<image bindtap="on_product_click" data-product_id="{{item.Product.id}}" src="{{imgUrl}}{{item.image}}" class="slide-image" width="355" height="150" />
+				</swiper-item>
+			</block>
+		</view>
+	</swiper>
+	<!-- 消息卡片 -->
+	<view class="card">
+		<view class="card-top">
+			<view class="card-top-left">
+				<view class="card-top-left-details">
+					<text>38°</text>
+					<image class="card-top-left-details-image" src="../../images/太阳.png"></image>
+					<text>晴 西风一级</text>
+				</view>
+				<view class="excellent">优</view>
+			</view>
+			<view class="card-top-right">
+				<view class="card-top-right-details">
+					<image class="card-top-right-details-image" src="../../images/汽车.png"></image>
+					<text>农历六月十四星期五</text>
+				</view>
+				<view class="tail">汽车尾号4和6</view>
+			</view>
+		</view>
+		<view class="card-bottom" bindtap="on_notice_click">
+			<view class="card-bottom-left">
+				<view class="card-bottom-left-details" bindtap="on_notice_click">社区公告</view>
+			</view>
+			<view class="card-bottom-center">
+				<view class="card-bottom-center-details">温馨提示</view>
+			</view>
+			<view class="card-bottom-right">
+				<view class="card-bottom-right-details">关于香缇园开展项目经...</view>
+				<image class="card-bottom-right-image" src="../../images/jiantou.jpg"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 功能 -->
+	<view class="function">
+		<van-row custom-class="icons">
+			<van-col custom-class="icons-col" span="6" bindtap="on_reportRepair_click">
+				<image src="../../images/baoxiu.gif"></image>
+				<view>生活报修</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_pay_click">
+				<image src="../../images/jiaofei.jpg"></image>
+				<view>生活缴费</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_shopping_click">
+				<image src="../../images/gouwu.jpg"></image>
+				<view>社区购物</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_medicalCare_click">
+				<image src="../../images/yiliao.jpg"></image>
+				<view>社区医疗</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_house_click">
+				<image src="../../images/fangwu.jpg"></image>
+				<view>房屋出售</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_AccessControl_click">
+				<image src="../../images/menjin.jpg"></image>
+				<view>我的门禁</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_Housekeeping_click">
+				<image src="../../images/jiazheng.jpg"></image>
+				<view>家政保洁</view>
+			</van-col>
+			<van-col custom-class="icons-col" span="6" bindtap="on_complaint_click">
+				<image src="../../images/tousu.jpg"></image>
+				<view>社区投诉</view>
+			</van-col>
+		</van-row>
+	</view>
+	<!-- 热销商品 -->
+	<view class="hot">
+		<view class="name">
+			<image class="name-image" src="../../images/热销商品.png"></image>
+		</view>
+		<view class="content-list">
+			<view class="list-item" wx:for="{{hot}}" wx:key="item">
+				<image src="{{item.imgUrl}}"></image>
+				<view>{{item.village}}</view>
+				<view class="title">{{item.title}}</view>
+			</view>
+		</view>
+	</view>
+	<!-- 社区头条 -->
+	<view class="Headlines">
+		<view class="Headlines-title">
+			<image class="Headlines-image" src="../../images/社区头条.png"></image>
+		</view>
+		<view class="content">
+			
+			<view class="one">
+				<image class="content-image" src="../../images/toutiao1.jpg"></image>
+				<text>“大数据+智能化”给社会治理带来哪些改变</text>
+			</view>
+			<view class="one">
+				<image class="content-image" src="../../images/toutiao1.jpg"></image>
+				<text>“灯会怎么过”北京这19处灯会灯光秀随你挑</text>
+			</view>
+			<view class="one">
+				<image class="content-image" src="../../images/toutiao1.jpg"></image>
+				<text>打破数字货币的桎梏，区块链到底是向左向右</text>
+			</view>
+		</view>
+		<view class="more" bindtap="on_details_click">
+			<view class="more-tab">查看更多</view>
+		</view>
+	</view>
+</view>
+<!-- Tab标签 -->
+<!-- <van-tabbar active="{{ active }}" active-color="#FF0000" bind:change="onChange">
+	<van-tabbar-item bind:click="Changepages">
+		<image slot="icon" src="../../images/home2.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+		<image slot="icon-active" src="../../images/home.png" mode="aspectFit" style="width: 30px; height: 18px;" />首页
+	</van-tabbar-item>
+	<van-tabbar-item bind:click="Changepages">
+		<image src="../../images/朋友圈.png" style="width:50px;height:50px;margin-top:-35px;position: relative;z-index:999"></image>
+	</van-tabbar-item>
+	<van-tabbar-item bind:click="Changepages">
+		<image slot="icon" src="../../images/my.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+		<image slot="icon-active" src="../../images/my2.png" mode="aspectFit" style="width: 30px; height: 18px;" />我的
+	</van-tabbar-item>
+</van-tabbar> -->

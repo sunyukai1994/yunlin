@@ -1,0 +1,4 @@
+<!-- 顶部地址-->
+<view bindtap="address" class="f1 df top-address">
+  <view class=""><span class="eli1">{{address}}</span></view>
+</view>

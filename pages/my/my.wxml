@@ -1,0 +1,103 @@
+<!--pages/my/my.wxml-->
+<!--登录按钮-->
+<view class="my">
+	<button class="denglu" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+	<view class="top" wx:else="{{111}}">
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		<view class="right">
+			<view class="userinfo-nickname">{{userInfo.nickName}}
+				<view class="guanzhu">业主</view>
+			</view>
+			<view class="right-images">
+				<image class="right-image" src="../../images/jiantou.jpg"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 我的房屋 -->
+	<view class="myhouse">
+		<view class="myhouse-images">
+			<image class="myhouse-image" src="../../images/房屋房产.gif"></image>
+		</view>
+		<view class="myhouse-details">
+			<view class="myhouse-left">
+				<text class="title">我的房屋</text>
+			</view>
+			<view class="myhouse-right">
+				<text class="address">1号楼1单元302</text>
+				<image class="arrow" src="../../images/jiantou.jpg"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 我的订单 -->
+	<view class="order">
+		<view class="order-top">
+			<view class="order-details">
+				<view class="weizhi">
+					<text class="order-top-title">我的订单</text>
+				</view>
+				<view class="weizhi2">
+					<text class="order-top-more">查看更多订单</text>
+					<image class="order-arrow" src="../../images/jiantou.jpg"></image>
+				</view>
+			</view>
+		</view>
+		<view class="order-bottom">
+			<van-row custom-class="icons">
+				<van-col custom-class="icons-col" span="6">
+					<image src="../../images/daifukuan.gif"></image>
+					<view style="font-size:28rpx; color:#6b6967;">待付款</view>
+				</van-col>
+				<van-col custom-class="icons-col" span="6">
+					<image src="../../images/待发货.gif"></image>
+					<view style="font-size:28rpx; color:#6b6967;">待发货</view>
+				</van-col>
+				<van-col custom-class="icons-col" span="6">
+					<image src="../../images/daishouhuo.gif"></image>
+					<view style="font-size:28rpx; color:#6b6967;">待收货</view>
+				</van-col>
+				<van-col custom-class="icons-col" span="6">
+					<image src="../../images/daipingjia.gif"></image>
+					<view style="font-size:28rpx; color:#6b6967;">待评价</view>
+				</van-col>
+			</van-row>
+		</view>
+	</view>
+	<!-- 投诉进度 -->
+	<view class="function" bindtap="on_complaint_click">
+		<image class="left-image" src="../../images/投诉.gif"></image>
+		<text class="left-title">投诉进度</text>
+		<image class="right-arrow" src="../../images/jiantou.jpg"></image>
+	</view>
+	<!-- 个人报修 -->
+	<view class="function" bindtap="on_reportRepair_click">
+		<image class="left-image" src="../../images/报修.gif"></image>
+		<text class="left-title">个人报修</text>
+		<image class="right-arrow" src="../../images/jiantou.jpg"></image>
+	</view>
+	<!-- 个人缴费 -->
+	<view class="function" bindtap="on_pay_click">
+		<image class="left-image" src="../../images/缴费.gif"></image>
+		<text class="left-title">个人缴费</text>
+		<image class="right-arrow" src="../../images/jiantou.jpg"></image>
+	</view>
+	<!-- 设置 -->
+	<view class="function" style="margin-bottom:50rpx;" bindtap="on_setUp_click">
+		<image class="left-image" src="../../images/设置.gif"></image>
+		<text class="left-title">设置</text>
+		<image class="right-arrow" src="../../images/jiantou.jpg" style="margin-left:480rpx;"></image>
+	</view>
+</view>
+<!-- Tab标签 -->
+<!-- <van-tabbar active="{{ active }}" active-color="#FF0000" bind:change="onChange">
+	<van-tabbar-item bind:click="Changepages">
+		<image slot="icon" src="../../images/home2.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+		<image slot="icon-active" src="../../images/home.png" mode="aspectFit" style="width: 30px; height: 18px;" />首页
+	</van-tabbar-item>
+	<van-tabbar-item bind:click="Changepages">
+		<image src="../../images/朋友圈.png" style="width:50px;height:50px;margin-top:-35px;position: relative;z-index:999"></image>
+	</van-tabbar-item>
+	<van-tabbar-item bind:click="Changepages">
+		<image slot="icon" src="../../images/my.png" mode="aspectFit" style="width: 30px; height: 18px;" />
+		<image slot="icon-active" src="../../images/my2.png" mode="aspectFit" style="width: 30px; height: 18px;" />我的
+	</van-tabbar-item>
+</van-tabbar> -->

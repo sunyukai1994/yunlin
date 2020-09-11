@@ -1,0 +1,75 @@
+<!--pages/medicalCare/medicalCare.wxml-->
+<view class="top">
+	<view class="information">
+		<image class="userinfo-avatar" src="../../images/1.png"></image>
+		<view class="right">
+			<view class="userinfo-nickname">王医生</view>
+		</view>
+	</view>
+	<view class="mode">
+		<view class="mode-left {{selected?'red':'default'}}" bindtap="selected">在线解答</view>
+		<view class="mode-xian"></view>
+		<view class="mode-right {{selected1?'red':'default'}}" bindtap="selected1">上门看病</view>
+	</view>
+</view>
+<view class="phone" bindtap="callGroom">
+	<image src="../../images/电话.gif"></image>
+	<view class="phone-details">医生联系电话:15231976516</view>
+</view>
+<!-- 预约挂号 -->
+<view class="register {{selected?'show':'hidden'}}">
+	<view class="register-title">预约挂号</view>
+	<view class="register-text">
+		<view class="geren">请描述具体的病情</view>
+		<input class="neirong"></input>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">姓名:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">手机:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">家庭住址:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="secede-btn">
+		<button class="btn" bindtap="tijiao">提交</button>
+	</view>
+</view>
+<view class="register {{selected1?'show':'hidden'}}">
+	<view class="register-title">预约挂号</view>
+	<view class="register-text">
+		<view class="geren">请描述具体的病情</view>
+		<input class="neirong"></input>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">姓名:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">手机:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="my-phone">
+		<view class="my-phone-text">家庭住址:</view>
+		<view class="shuju">
+			<input class="num" placeholder="XXX"></input>
+		</view>
+	</view>
+	<view class="secede-btn">
+		<button class="btn" bindtap="tijiao">提交</button>
+	</view>
+</view>

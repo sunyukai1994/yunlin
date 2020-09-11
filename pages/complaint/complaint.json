@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "社区投诉",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

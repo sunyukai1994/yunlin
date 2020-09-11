@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/notice/notice",
+    "pages/shopping/shopping",
+    "pages/pay/pay",
+    "pages/house/house",
+    "pages/complaint/complaint",
+    "pages/reportRepair/reportRepair",
+    "pages/setup/setup",
+    "pages/medicalCare/medicalCare",
+    "pages/pengyouquan/pengyouquan",
+    "pages/Housekeeping/Housekeeping",
+    "pages/AccessControl/AccessControl",
+    "pages/comment/comment",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-tabbar": "./utils/dist/tabbar/index",
+    "van-tabbar-item": "./utils/dist/tabbar-item/index",
+    "van-row": "./utils/dist/row/index",
+    "van-col": "./utils/dist/col/index",
+    "van-switch": "./utils/dist/switch/index",
+    "van-uploader": "./utils/dist/uploader/index",
+    "van-dropdown-menu": "./utils/dist/dropdown-menu/index",
+    "van-dropdown-item": "./utils/dist/dropdown-item/index",
+    "van-search": "./utils/dist/search/index",
+    "van-tab": "./utils/dist/tab/index",
+    "van-tabs": "./utils/dist/tabs/index"
+  },
+  "tabBar":{
+    "custom":true,
+    "color":"#ccc",
+    "borderStyle":"white",
+    "selectedColor": "#e23636",
+    "backgroundColor":"#fff",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "iconPath":"images/home2.png",
+        "selectedIconPath":"images/home.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "iconPath":"images/my.png",
+        "selectedIconPath":"images/my2.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

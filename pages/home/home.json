@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "address":"../../components/address/address",
+    "topItem":"../../components/topItem/topItem"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

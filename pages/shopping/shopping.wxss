@@ -1,0 +1,197 @@
+/* pages/shopping/shopping.wxss */
+page{
+  background-color: #ededed;
+}
+.shopping{
+  width: 100%;
+  /* background-color: #ededed; */
+}
+/* header 头部 */
+.header{
+  width: 100%;
+  height: 220rpx;
+  /* background-color: #fff; */
+  /* display: flex; */
+}
+.header-search{
+  width: 100%;
+  height: 50rpx auto;
+  display: flex;
+  background-color: #fff;
+}
+.fanhui{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 35rpx;
+  margin-left: 20rpx;
+  /* z-index: 1; */
+}
+.search{
+  width: 670rpx;
+  margin-left: 40rpx;
+  /* z-index: 0; */
+}
+/* .header-nav{
+  background-color: #ededed;
+  border-bottom: 1rpx solid #d2d2d2;
+} */
+/* .header-custom{
+  background: cadetblue;
+} */
+/* 轮播图 */
+.banner{
+  margin: 25rpx auto 30rpx;
+  position: relative;
+  width: 92%;
+  height: 350rpx;
+  z-index:10;
+}
+.banner image{
+  border-radius: 25rpx;
+  width: 100%;
+  height: 100%;
+}
+/* 常买清单 */
+.often{
+  display: flex;
+  width: 92%;
+  height: 250rpx;
+  margin: 0 auto 30rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  z-index: 1;
+}
+.often-left{
+  width: 20%;
+  height: 100%;
+  line-height: 1;
+  /* background-color: chartreuse; */
+}
+.often-left-image{
+  width: 70%;
+  height: 23%;
+  margin: 65rpx 0  0 25rpx;
+}
+.often-left-title{
+  font-size: 28rpx;
+  /* font-weight: bold; */
+  text-align: center;
+}
+.often-left-text{
+  font-size: 18rpx;
+  text-align: center;
+  color: #b9b8b7;
+  padding-top: 4rpx;
+}
+.often-image{
+  display: flex;
+  width: 77%;
+  height: 100%;
+  /* background-color: cornflowerblue; */
+}
+.often-image-left{
+  width: 31.5%;
+  height: 70%;
+  margin-top: 25rpx;
+  background-color: #eeeeee;
+}
+.often-image-center{
+  width: 31.5%;
+  height: 70%;
+  margin: 25rpx 15rpx 0 15rpx;
+  background-color: #eeeeee;
+}
+.often-image-right{
+  width: 31.5%;
+  height: 70%;
+  margin-top: 25rpx;
+  background-color: #eeeeee;
+}
+.often-image image{
+  width: 73%;
+  height: 70%;
+  margin: 20rpx 0 0 25rpx;
+}
+.often-image-text{
+  width: 55%;
+  height: 20%;
+  margin: 8rpx auto;
+  background-color: #f2bd05;
+  border-radius: 10rpx;
+  font-size: 25rpx;
+  color: #6e6b6b;
+  text-align: center;
+  line-height: 1.5;
+}
+/* 商品 */
+.commodity{
+  display: flex;
+  width: 92%;
+  height: 450rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  border-radius: 25rx;
+  /* background-color: darksalmon; */
+}
+.commodity-left{
+  width: 48.5%;
+  height: 100%;
+  border-radius: 25rpx;
+  background-color: #fff;
+}
+.commodity-right{
+  width: 48.5%;
+  height: 100%;
+  margin-left: 3%;
+  border-radius: 25rpx;
+  background-color: #fff;
+}
+.commodity-image{
+  width: 85%;
+  height: 60%;
+  margin: 10rpx auto;
+  background-color: #fff;
+}
+.commodity-image image{
+  width: 100%;
+  height: 100%;
+}
+.commodity-details{
+  margin-left: 20rpx;
+}
+.commodity-title{
+  font-size: 30rpx;
+}
+.commodity-introduce{
+  font-size: 25rpx;
+  color: #6e6b6b;
+}
+.commodity-bottom{
+  width: 100%;
+  display: flex;
+  line-height: 1.8;
+}
+.commodity-discount{
+  width: 80rpx;
+  height: 30rpx;
+  border: 1rpx solid #fd0404;
+  border-radius: 10rpx;
+  font-size: 20rpx;
+  color: #fd0404;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 5rpx;
+}
+.commodity-price{
+  font-size: 26rpx;
+  color: #ff5530;
+}
+.commodity-bottom image{
+  width: 55rpx;
+  height: 55rpx;
+  margin: 18rpx 0 0 48%;
+}
+.commodity-price text{
+  font-size: 20rpx;
+  color: #b3b2b2;
+}

@@ -1,0 +1,60 @@
+<!--pages/pengyouquan/pengyouquan.wxml-->
+<view class="pengyouquan">
+	<!-- 头部背景 -->
+	<view class="top">
+		<image src="../../images/20161111192655_vNMdL.gif" />
+	</view>
+	<!-- 账号信息 -->
+	<view class="user">
+		<text>空白</text>
+		<image src="../../images/touxiang1.jpg" />
+	</view>
+	<!-- 朋友圈 -->
+	<view class="details">
+		<view class="details-head">
+			<image src="../../images/touxiang1.jpg" />
+			<text>于浩</text>
+		</view>
+		<!-- 内容 -->
+		<view class="content">
+			<image src="../../images/1582275421702.JPG" />
+			<image src="../../images/touxiang1.jpg" />
+		</view>
+		<!-- 时间 -->
+		<view class="time">
+			<text>26分钟前</text>
+			<image src="../../images/diandian.gif" catchtap="dianji" />
+			<view class="hei {{tab?'hidden':'show'}}">
+				<view class="left">
+					<image src="../../images/评论.png" />
+					<text>评论</text>
+				</view>
+				<view class="right">
+					<image src="../../images/喜欢.png" />
+					<text>赞</text>
+				</view>
+			</view>
+		</view>
+		<view class="pinglun">
+			<view>空白：这个评论很赞！</view>
+			<view>空白：这个评论很赞！</view>
+		</view>
+	</view>
+	<view class="details">
+		<view class="details-head">
+			<image src="../../images/touxiang1.jpg" />
+			<text>于浩</text>
+		</view>
+		<view class="content">
+			<image src="../../images/1582275421702.JPG" />
+			<image src="../../images/touxiang1.jpg" />
+		</view>
+		<view class="time">
+			<text>26分钟前</text>
+			<image src="../../images/diandian.gif" catchtap="dianji1" />
+		</view>
+		<view class="pinglun">
+			<view>空白：这个评论很赞！</view>
+		</view>
+	</view>
+</view>

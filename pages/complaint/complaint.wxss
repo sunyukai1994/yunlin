@@ -1,0 +1,165 @@
+/* pages/complaint/complaint.wxss */
+page{
+  background-color: #ecebe9;
+}
+.complaint{
+  width: 100%;
+}
+/* 头部 */
+.header{
+  width: 100%;
+  /* height: 300rpx; */
+  background-color: #fff;
+}
+.acceptance{
+  width: 60%;
+  height: 200rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+.acceptance-text1{
+  font-size: 38rpx;
+  color: #f01111;
+}
+.acceptance-text2{
+  font-size: 38rpx;
+  color: #0e9f2c;
+}
+.header-xian{
+  height: 100rpx;
+  border: 0.5rpx solid #ecebe9;
+  margin: 0 auto;
+}
+.progress{
+  padding-left: 15rpx;
+  padding-top: 20rpx;
+}
+.success{
+  padding-left: 15rpx;
+  padding-top: 20rpx;
+}
+/* 预约挂号 */
+.register{
+  width: 92%;
+  height: 1050rpx;
+  border-radius: 25rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  /* margin-bottom: 30rpx; */
+}
+.register-title{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  height: 130rpx;
+  /* background-color: #1e76a9; */
+  font-size: 40rpx;
+  letter-spacing: 2rpx;
+}
+.default{
+  color: #646260;
+}
+.red{
+  color: #d7450b;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/* .geren-title{
+  color: #d7450b;
+}
+.gonggong-title{
+  color: #646260;
+} */
+.zhixian-title{
+  height: 60rpx;
+  border: 0.5rpx solid #ecebe9;
+  margin: 0 auto;
+}
+.register-text{
+  position: relative;
+  width: 92%;
+  height: 300rpx;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  border-radius: 20rpx;
+}
+/* .geren{
+  position: absolute;
+  font-weight: bolder;
+  top: 30rpx;
+  left: 5%;
+  color: #8a8a8a;
+} */
+.neirong{
+  position: absolute;
+  width: 100%;
+  height: 300rpx;
+  /* left: 7%; */
+  color: #605f5f;
+  font-size: 26rpx;
+  /* border-radius: 25rpx; */
+}
+.placeholder-class{
+  padding-left: 40rpx;
+  margin-top: -80rpx;
+}
+.my-phone{
+  position: relative;
+  /* display: flex; */
+  width: 92%;
+  height: 100rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #dfdfdf;
+}
+.my-phone-text{
+  position: absolute;
+  /* font-weight: bolder; */
+  top: 30rpx;
+  /* left: 5% */
+}
+.num{
+  color: #797979;
+  margin-top: 30rpx;
+  text-align: right
+}
+.shuju{
+  float: right;
+}
+.upload{
+  width: 92%;
+  height: 200rpx;
+  margin: 0 auto;
+  display: flex;
+  /* background-color: #f01111; */
+}
+.my-upload-text{
+  margin-right: 30rpx;
+  padding-top: 50rpx;
+}
+.my-upload{
+  padding-top: 20rpx;
+}
+.btn{
+  margin-top: 10rpx;
+  margin-bottom: 1rpx;
+  background: #e60012;
+  width: 92%!important;
+  text-align: center;
+  /* font-size: 30rpx; */
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2rpx;
+}
+.secede-btn{
+margin-top: 30rpx;
+margin-bottom: 15rpx;
+}

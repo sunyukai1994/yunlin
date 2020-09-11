@@ -1,0 +1,63 @@
+<!--pages/setup/setup.wxml-->
+<view class="setup">
+	<view class="setup-function">
+		<view class="left-title">第三方账户管理</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+	<view class="setup-function">
+		<view class="left-title">支付设置</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+	<view class="setup-function-switch">
+		<view class="left-switch-title">
+			<view>消息通知</view>
+			<view style="font-size:25rpx; color:#9a9a9a; padding-top:10rpx;">第一时间接受订单提醒、优惠促销</view>
+		</view>
+		<view class="switch">
+			<van-switch custom-class="switch-weizhi" checked="{{ checked }}" bind:change="onChange" active-color="#ea6840" inactive-color="#f0f0f0" size="50rpx" />
+		</view>
+	</view>
+  <view class="setup-function-switch">
+		<view class="left-switch-title">
+			<view>个性化搜索</view>
+			<view style="font-size:25rpx; color:#9a9a9a; padding-top:10rpx;">如需删除个性化搜索相关信息，请咨询客服</view>
+		</view>
+		<view class="switch">
+			<van-switch custom-class="switch-weizhi" checked="{{ checked1 }}" bind:change="onChange1"  active-color="#ea6840" inactive-color="#f0f0f0" size="50rpx" />
+		</view>
+	</view>
+  <view class="setup-function" style="padding-top:35rpx;">
+		<view class="left-title">修改密码</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+  <view class="xian"></view>
+  <view class="setup-function" style="padding-top:24rpx;">
+		<view class="left-title">关于邻里</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+  <view class="setup-function">
+		<view class="left-title">隐私政策</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+  <view class="setup-function">
+		<view class="left-title">帮助与反馈</view>
+		<view class="right-image">
+			<image src="../../images/setup-jiantou.gif"></image>
+		</view>
+	</view>
+  <!-- <view class=""></view> -->
+  
+</view>
+<view class="secede-btn">
+  <button class="btn">退出登录</button>
+</view>

@@ -1,0 +1,220 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #ededed;
+}
+.my{
+  margin-bottom: 150rpx;
+}
+/* 登录按钮 */
+.denglu {
+  border: #ccc solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50% !important;
+  height: 40px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.top{
+  width: 100%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 5%;
+  margin-right: 20rpx;
+  margin-top: 25rpx;
+  /* margin-bottom: 20rpx; */
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  display: flex;
+  margin-bottom: 10px;
+  float: left;
+}
+.right{
+  /* display: flex; */
+  width: 515rpx;
+  /* background-color: aqua; */
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 40rpx;
+}
+.guanzhu{
+  width: 90rpx;
+  height: 40rpx;
+  background-color: #fba93e;
+  border-radius: 15rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+}
+.right-image{
+  width: 20rpx;
+  height: 30rpx;
+  float: right;
+  /* margin-right: -300rpx; */
+  margin-top: 15rpx;
+}
+.right-images{
+  float: right;
+}
+/* 我的房屋 */
+.myhouse{
+  display: flex;
+  width: 100%;
+  height: 150rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.myhouse-images{
+  width: 128rpx;
+  margin-left: 5%;
+  margin-right: 20rpx;
+  /* background-color: aquamarine; */
+}
+.myhouse-details{
+  width: 515rpx;
+  margin-left: 10px;
+  /* background-color: aqua; */
+}
+.myhouse-left{
+  float: left;
+  margin-top: 50rpx;
+}
+.myhouse-image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+}
+.title{
+  font-size: 35rpx;
+  font-weight: 200;
+  /* margin-left: 70rpx; */
+  /* margin-top: 60rpx; */
+}
+.myhouse-right{
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.address{
+  font-size: 25rpx;
+  margin-right: 15rpx;
+  margin-top: 60rpx;
+  color:#6b6967;
+}
+.arrow{
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 60rpx;
+  /* margin-left: 20rpx; */
+}
+/* 我的订单 */
+.order{
+  width: 100%;
+  height: 280rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.order-top{
+  width: 100%;
+  height: 35%;
+  /* background-color: aqua; */
+  border-bottom: 1rpx solid #e5e5e5;
+  /* display: flex;
+  align-items: center; */
+}
+.order-details{
+  /* display: flex; */
+  width: 685rpx;
+  margin-left: 5%;
+  /* background-color: aqua; */
+}
+.weizhi{
+  float: left;
+  /* width: 205rpx; */
+  /* display: flex;
+  align-items: center;*/
+  margin-top: 25rpx; 
+}
+.weizhi2{
+  /* width: 515rpx; */
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-top: 35rpx;
+}
+.order-top-title{
+  font-size: 35rpx;
+  font-weight: 200;
+  margin-left: 20rpx;
+  /* margin-top: 32rpx; */
+}
+.order-top-more{
+  font-size: 25rpx;
+  margin-right: 15rpx;
+  /* margin-top: 38rpx; */
+  color:#6b6967;
+}
+.order-arrow{
+  width: 20rpx;
+  height: 30rpx;
+  /* margin-top: 38rpx; */
+  /* margin-left: 25rpx; */
+}
+.order-bottom{
+  width: 100%;
+  height: 65%;
+  /* background-color: aquamarine; */
+}
+.icons{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30rpx;
+  padding-top: 30rpx;
+}
+.icons-col{
+  height: 170rpx;
+}
+.icons-col image{
+  width: 60rpx;
+  height: 50rpx;
+  margin-bottom: 15rpx;
+}
+/* 投诉进度 */
+.function{
+  display: flex;
+  width: 100%;
+  height: 110rpx;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.left-title{
+  font-size: 35rpx;
+  font-weight: 200;
+  margin-left: 30rpx;
+  margin-top: 35rpx;
+}
+.left-image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 60rpx;
+  margin-top: 30rpx;
+}
+.right-arrow{
+  width: 30rpx;
+  height: 40rpx;
+  margin-top: 36rpx;
+  margin-left: 415rpx;
+}

@@ -1,0 +1,125 @@
+<!--pages/shopping/shopping.wxml-->
+<view class="shopping">
+	<!-- header 头部 -->
+	<view class="header">
+		<!-- 搜索框 -->
+		<view class="header-search">
+			<van-search custom-class="search" value="{{ value }}" shape="round" background="#fff" placeholder="请输入搜索关键词" />
+		</view>
+		<!-- Tab切换 -->
+		<van-tabs animated active="{{ active }}" nav-class="header-nav" custom-class="header-custom" tab-class="header-tab">
+			<van-tab title="综合">
+				<!-- 轮播图 -->
+				<swiper class="banner" indicator-color="tgbc(255,255,255,5)" indicator-active-color="#e60012" indicator-dots="true" circular autoplay>
+					<swiper-item wx:for="{{banner}}" wx:key="{{item.id}}">
+						<image src="{{item.image}}"></image>
+					</swiper-item>
+				</swiper>
+				<!-- 常买清单 -->
+				<view class="often">
+					<view class="often-left">
+						<image class="often-left-image" src="../../images/HOT.gif"></image>
+						<view class="often-left-title">常买清单</view>
+						<view class="often-left-text">为您推荐好物</view>
+					</view>
+					<view class="often-image">
+						<view class="often-image-left">
+							<image src="../../images/常买-1.gif"></image>
+							<view class="often-image-text">2件8折</view>
+						</view>
+						<view class="often-image-center">
+							<image src="../../images/常买-2.gif"></image>
+							<view class="often-image-text">1件8折</view>
+						</view>
+						<view class="often-image-right">
+							<image src="../../images/常买-3.gif" style="height:50%; margin-top:35rpx;"></image>
+							<view class="often-image-text" style="width:58%; font-size:23rpx; letter-spacing:-3rpx; line-height:1.6; margin-top:29.5rpx;">限时优惠</view>
+						</view>
+					</view>
+				</view>
+				<!-- 商品 -->
+				<view class="commodity">
+					<!-- <view class="commodity-details"> -->
+					<view class="commodity-left">
+						<view class="commodity-image">
+							<image src="../../images/商品1.gif"></image>
+						</view>
+						<view class="commodity-details">
+							<view class="commodity-title">得宝无香软抽纸巾</view>
+							<view class="commodity-introduce">90抽✖1包 | 抽取式面巾纸</view>
+							<view class="commodity-bottom">
+								<view class="commodity-text">
+									<view class="commodity-discount">新人礼</view>
+									<view class="commodity-price">￥9.9</view>
+								</view>
+								<image src="../../images/购物车.gif"></image>
+								<!-- <view class="commodity-vehicle"></view> -->
+							</view>
+						</view>
+					</view>
+					<view class="commodity-right">
+						<view class="commodity-image">
+							<image src="../../images/商品2.gif"></image>
+						</view>
+						<view class="commodity-details">
+							<view class="commodity-title">奇多粟米捧日式牛排味</view>
+							<view class="commodity-introduce">60袋x1袋 | 其他/other</view>
+							<view class="commodity-bottom">
+								<view class="commodity-text">
+									<view class="commodity-discount" style="background-color:#f2bd05; border:1rpx solid #f2bd05; color:#6e6b6b;">2件8折</view>
+									<view class="commodity-price">￥3.8</view>
+								</view>
+								<image src="../../images/购物车.gif"></image>
+							</view>
+						</view>
+					</view>
+					<!-- </view> -->
+				</view>
+				<view class="commodity">
+					<!-- <view class="commodity-details"> -->
+					<view class="commodity-left">
+						<view class="commodity-image">
+							<image src="../../images/商品3.gif"></image>
+						</view>
+						<view class="commodity-details">
+							<view class="commodity-title">金顺祥天津麻花36g</view>
+							<view class="commodity-introduce">36gx1袋 | 麻花</view>
+							<view class="commodity-bottom">
+								<view class="commodity-text">
+									<view class="commodity-discount">新人礼</view>
+									<view class="commodity-price">￥1 <text>月销18.5万件</text></view>
+								</view>
+								<image src="../../images/购物车.gif" style="margin: 18rpx 0 0 20.5%;"></image>
+								<!-- <view class="commodity-vehicle"></view> -->
+							</view>
+						</view>
+					</view>
+					<view class="commodity-right">
+						<view class="commodity-image">
+							<image src="../../images/商品4.gif"></image>
+						</view>
+						<view class="commodity-details">
+							<view class="commodity-title">化妆用双头棉签100只</view>
+							<view class="commodity-introduce">90抽x1包 | 抽取式面巾纸</view>
+							<view class="commodity-bottom">
+								<view class="commodity-text">
+									<view class="commodity-discount">新人礼</view>
+									<view class="commodity-price">￥3280</view>
+								</view>
+								<image src="../../images/购物车.gif" style="margin: 18rpx 0 0 46%;"></image>
+							</view>
+						</view>
+					</view>
+					<!-- </view> -->
+				</view>
+			</van-tab>
+			<van-tab title="日用">内容 2</van-tab>
+			<van-tab title="饮料">内容 3</van-tab>
+			<van-tab title="米面">内容 4</van-tab>
+			<van-tab title="零食">内容 5</van-tab>
+			<van-tab title="酒类">内容 6</van-tab>
+			<van-tab title="母婴">内容 6</van-tab>
+		</van-tabs>
+	</view>
+
+</view>

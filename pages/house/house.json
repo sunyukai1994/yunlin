@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "房屋出售",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

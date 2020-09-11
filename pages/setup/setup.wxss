@@ -1,0 +1,53 @@
+/* pages/setup/setup.wxss */
+.setup{
+  width: 100%;
+  /* height: 80rpx; */
+  /* background-color: aquamarine; */
+}
+.setup-function{
+  /* display: flex; */
+  align-items: center;
+  width: 92%;
+  height: 80rpx;
+  margin: 0 auto;
+  margin-bottom: 15rpx;
+  /* background-color: burlywood; */
+}
+.left-title{
+  padding-top: 20rpx;
+}
+.right-image{
+  /* display: flex;
+  align-items: center; */
+  float: right;
+  margin-top: -38rpx;
+  /* margin-left: 465rpx; */
+}
+.right-image image{
+  width: 20rpx;
+  height: 35rpx;
+}
+
+.setup-function-switch{
+  /* display: flex; */
+  width: 92%;
+  height: 115rpx;
+  margin: 0 auto;
+  /* background-color: burlywood; */
+}
+.left-switch-title{
+  padding-top: 30rpx;
+}
+.switch{
+  float: right;
+  margin-top: -75rpx;
+}
+.xian{
+  width: 92%;
+  border-bottom: 1rpx solid #c8c8c8;
+  margin: 0 auto;
+  padding-top: 10rpx;
+}
+.secede-btn{
+  margin-top: 120rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "社区购物",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

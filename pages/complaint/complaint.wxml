@@ -1,0 +1,96 @@
+<!--pages/complaint/complaint.wxml-->
+<view class="complaint">
+	<!-- 头部 -->
+	<view class="header">
+		<view class="acceptance">
+			<view class="acceptance-left">
+				<view> <text class="acceptance-text1">10个</text> 投诉</view>
+				<view class="progress">正在受理</view>
+			</view>
+			<view class="header-xian"></view>
+			<view class="acceptance-right">
+				<view> <text class="acceptance-text2">12个</text> 投诉</view>
+				<view class="success">受理成功</view>
+			</view>
+		</view>
+	</view>
+	<!-- 详情 -->
+	<view class="register">
+		<view class="register-title">
+			<view class="geren-title {{selected?'red':'default'}}" bindtap="selected">个人</view>
+			<view class="zhixian-title"></view>
+			<view class="gonggong-title {{selected1?'red':'default'}}" bindtap="selected1">公共</view>
+		</view>
+		<view class="tab {{selected?'show':'hidden'}}">
+			<view class="register-text">
+				<!-- <view class="geren"></view> -->
+				<input class="neirong" placeholder="请输入具体投诉的内容(限300字内)" placeholder-class="placeholder-class"></input>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">投诉时间:</view>
+				<view class="shuju">
+					<input class="num" placeholder="2020-08-12"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">投诉地点:</view>
+				<view class="shuju">
+					<input class="num" placeholder="1号楼1单元201"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">业主姓名:</view>
+				<view class="shuju">
+					<input class="num" placeholder="赵先生"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">联系方式:</view>
+				<view class="shuju">
+					<input class="num" placeholder="152****6516"></input>
+				</view>
+			</view>
+			<view class="upload">
+				<view class="my-upload-text">上传图片:</view>
+				<van-uploader class="my-upload" file-list="{{ fileList }}" bind:after-read="afterRead" preview-size="100rpx" />
+			</view>
+		</view>
+		<view class="tab {{selected1?'show':'hidden'}}">
+			<view class="register-text">
+				<!-- <view class="geren"></view> -->
+				<input class="neirong" placeholder="请输入具体投诉的内容(限300字内)" placeholder-class="placeholder-class"></input>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">投诉时间:</view>
+				<view class="shuju">
+					<input class="num" placeholder="2020-08-20"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">投诉地点:</view>
+				<view class="shuju">
+					<input class="num" placeholder="1号楼1单元201"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">业主姓名:</view>
+				<view class="shuju">
+					<input class="num" placeholder="赵先生"></input>
+				</view>
+			</view>
+			<view class="my-phone">
+				<view class="my-phone-text">联系方式:</view>
+				<view class="shuju">
+					<input class="num" placeholder="152****6516"></input>
+				</view>
+			</view>
+			<view class="upload">
+				<view class="my-upload-text">上传图片:</view>
+				<van-uploader class="my-upload" file-list="{{ fileList }}" bind:after-read="afterRead" preview-size="100rpx" />
+			</view>
+		</view>
+	</view>
+	<view class="secede-btn">
+		<button class="btn" bindtap="tijiao">提交</button>
+	</view>
+</view>

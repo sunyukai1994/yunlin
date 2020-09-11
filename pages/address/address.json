@@ -1,0 +1,6 @@
+{
+	"usingComponents": {
+    "address": "../../components/address/address"
+  },
+  "navigationBarTitleText": "位置"
+}

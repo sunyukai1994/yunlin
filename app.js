@@ -3,8 +3,20 @@ App({
   onLaunch: function () {
     //云开发环境初始化
     wx.cloud.init({
-      env:"neighborhood-6qy1s"
+      env:"dtcs2-f9ffae"
     })
+    
+    // 获取微信用户信息openid
+    wx.cloud.callFunction({
+      name: 'getopenid',
+      success: (res) =>{
+        this.globalData.openId = res.result.openid
+      },
+      fail:(e)=>{
+        console.log('失败')
+      }
+    })
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -38,6 +50,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    openId: null,   //用户openid
   }
 })

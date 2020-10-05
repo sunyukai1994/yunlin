@@ -1,11 +1,19 @@
 <!--pages/my/my.wxml-->
+<!-- 用户注册 -->
+<view class="get-phone" wx:if="{{is_phone}}">
+	<view class="get-box">
+		<open-data ></open-data>
+		<button open-type="getPhoneNumber" bindgetphonenumber="getUserPhone">允许</button>
+	</view>
+</view>
+
 <!--登录按钮-->
 <view class="my">
-	<button class="denglu" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
-	<view class="top" wx:else="{{111}}">
-		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+	<button class="denglu" wx:if="{{is_login}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+	<view class="top" wx:else>
+		<image class="userinfo-avatar" src="{{userInfo.pic}}" mode="cover"></image>
 		<view class="right">
-			<view class="userinfo-nickname">{{userInfo.nickName}}
+			<view class="userinfo-nickname">{{userInfo.nick_name}}
 				<view class="guanzhu">业主</view>
 			</view>
 			<view class="right-images">

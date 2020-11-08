@@ -1,189 +1,23 @@
-<!--pages/pay/pay.wxml-->
-<view class="pay">
-	<!-- header 头部 -->
-	<view class="header">
-		<view class="header-search">
-			<van-search custom-class="search" value="{{ value }}" shape="round" background="#fff" placeholder="请输入搜索关键词" />
-		</view>
-		<view class="header-tab">
-			<view class="header-left">
-				<view class="header-left-text {{selected?'red':'default'}}" bindtap="selected">
-					<image class="header-left-image" src="../../images/物业费.png" wx:if="{{wy}}" bindtap="selected"></image>
-					<image class="header-left-image" src="../../images/wuyefeiyongchuzhang.gif" wx:else bindtap="selected"></image>
-					<view>物业费</view>
-				</view>
-			</view>
-			<view class="header-zhixian"></view>
-			<view class="header-right-text {{selected1?'red':'default'}}" bindtap="selected1">
-				<image class="header-right-image" src="../../images/停车缴费.gif" wx:if="{{tc}}" bindtap="selected1"></image>
-				<image class="header-left-image" src="../../images/停车费.png" wx:else bindtap="selected1"></image>
-				<view>停车费</view>
-			</view>
-		</view>
+<view class="myHouse">
+	<image mode="widthFix" src="../../images/房屋房产.gif"></image>
+	<text>1号楼1单元302</text>
+	<image mode="widthFix" class="arrow" src="../../images/jiantou.jpg"></image>
+</view>
+<view class="payChild">
+	<view class="electricity payMoney" bindtap="payMoney">
+		<image mode="widthFix" src="../../images/electricity.png"></image>
+		<text style="color:{{electricity>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{electricity}}.00</text>
 	</view>
-	<!-- 物业费详情 -->
-	<view class="tab {{selected?'show':'hidden'}}" id="wuye">
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">1号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">1号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">2号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">2号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">3号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">3号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">4号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">4号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details" style="margin-bottom:40rpx;">
-			<view class="details-left">
-				<view class="details-left-title">5号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">5号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
+	<view class="electricity payMoney" >
+		<image mode="widthFix" src="../../images/water.png"></image>
+		<text style="color:{{water>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{water}}.00</text>
 	</view>
-	<view class="tab {{selected1?'show':'hidden'}}">
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">11号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">1号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">2号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">2号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">3号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">3号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details">
-			<view class="details-left">
-				<view class="details-left-title">4号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">4号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
-		<view class="details" style="margin-bottom:40rpx;">
-			<view class="details-left">
-				<view class="details-left-title">5号楼A房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-			<view class="details-right">
-				<view class="details-left-title">5号楼B房</view>
-				<view class="details-left-btn">
-					<text>￥2180</text>
-					<button class="left-btn">提交</button>
-				</view>
-			</view>
-		</view>
+	<view class="electricity payMoney" >
+		<image mode="widthFix" src="../../images/car.png"></image>
+		<text style="color:{{car>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{car}}.00</text>
+	</view>
+	<view class="electricity payMoney" >
+		<image mode="widthFix" src="../../images/heat.png"></image>
+		<text style="color:{{heat>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{heat}}.00</text>
 	</view>
 </view>

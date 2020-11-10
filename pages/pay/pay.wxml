@@ -1,23 +1,4 @@
-<view class="myHouse">
-	<image mode="widthFix" src="../../images/房屋房产.gif"></image>
-	<text>1号楼1单元302</text>
-	<image mode="widthFix" class="arrow" src="../../images/jiantou.jpg"></image>
-</view>
-<view class="payChild">
-	<view class="electricity payMoney" bindtap="payMoney">
-		<image mode="widthFix" src="../../images/electricity.png"></image>
-		<text style="color:{{electricity>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{electricity}}.00</text>
-	</view>
-	<view class="electricity payMoney" >
-		<image mode="widthFix" src="../../images/water.png"></image>
-		<text style="color:{{water>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{water}}.00</text>
-	</view>
-	<view class="electricity payMoney" >
-		<image mode="widthFix" src="../../images/car.png"></image>
-		<text style="color:{{car>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{car}}.00</text>
-	</view>
-	<view class="electricity payMoney" >
-		<image mode="widthFix" src="../../images/heat.png"></image>
-		<text style="color:{{heat>0 ? 'rgb(0, 187, 0)':'red'}}">￥{{heat}}.00</text>
-	</view>
+<view bindtap="payMentGo" wx:for="{{payList}}" wx:key='id' class="payitem" data-index="{{index}}">
+  <image src="{{item.img_src}}" mode="widthFix"></image>
+  <text>{{item.text}}</text>
 </view>

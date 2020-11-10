@@ -17,7 +17,8 @@
     "pages/comment/comment",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/address/address"
+    "pages/address/address",
+    "pages/payment/payment"
   ],
   "window": {
     "backgroundTextStyle": "light",

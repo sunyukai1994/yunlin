@@ -1,0 +1,71 @@
+.title{
+  width: 100vw;
+  height: 10vw;
+  background: rgb(255, 87, 87);
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 10vw;
+}
+.top{
+  width: 100vw;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(240, 150, 122);
+}
+.topImg{
+  width: 12vw;
+  height: 12vw;
+  margin: 4vw;
+  margin-left: 7vw;
+  margin-right: 0;
+}
+.topMsg{
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+}
+.topMsg text{
+  color: chartreuse;
+}
+.center{
+  padding:30rpx;
+  font-size: 32rpx;
+  position: relative;
+  border-bottom: 2px solid rgb(240, 150, 122);
+}
+.person{
+  color: #333;
+  
+}
+.name{
+  margin-right: 10rpx;
+}
+.address{
+  margin-top:5rpx ;
+}
+.more{
+  width: 5vw;
+  position: absolute;
+  right: 20rpx;
+  top: 50rpx;
+  transform: rotate(180deg);
+
+}
+.payType{
+  width: 100vw;
+  text-align: center;
+}
+.payNow{
+  width: 100vw;
+  height: 11vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgb(255, 87, 87);
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  line-height: 11vw;
+}

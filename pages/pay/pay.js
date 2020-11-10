@@ -4,83 +4,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    electricity:100,
-    water:20,
-    car:5,
-    heat:0
-  },
-  payMoney(){
-    // console.log(123);
-    
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: 'MD5',
-      paySign: '',
-      success (res) { 
-        console.log(res);
-        
+    payList:[
+      {
+        id:0,
+        img_src:'../../images/物业费.png',
+        text:'物业费'
       },
-      fail (res) {
-        console.log(res);
-        
-       }
+      {
+        id:1,
+        img_src:'../../images/汽车.png',
+        text:'停车费'
+      }
+    ]
+  },
+  boxShadow(index){
+
+  },
+  payMentGo(e){
+    // 获取当前选中的标签的自义定属性index
+    let {index}= e.currentTarget.dataset
+    // 修改样式
+    let query=wx.createSelectorQuery()
+    let item=wx.createSelectorQuery().selectAll('.payitem')
+    item.fields({ComputedStyle:['boxShow']},res=>{
+      console.log(res);  
+    }).exec()
+
+    // 跳转页面
+    let data=this.data.payList[index]
+    wx.navigateTo({
+      url: '../payment/payment',
+      success(res){
+        res.eventChannel.emit('payDatas',{data})
+      }
     })
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
   }
 })

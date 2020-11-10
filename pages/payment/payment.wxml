@@ -1,0 +1,17 @@
+<view class="title">余额及缴费</view>
+<view class="top">
+  <image mode="widthFix" class="topImg" src="{{payData.img_src}}"></image>
+  <view class="topMsg">
+    <view>{{payData.text}}</view>
+    <view>当前余额为：￥<text>1000.00</text></view>
+  </view>
+</view>
+<view class="center">
+  <view class="person">
+    <text class="name">{{PersonData.name}}</text>
+    <text class="phone">{{PersonData.phone}}</text>
+  </view>
+  <view class="address">{{PersonData.address}}</view>
+  <image mode="widthFix" src="../../images/返 回.png" class="more"></image>
+</view>
+<view class="payNow">缴费充值</view>

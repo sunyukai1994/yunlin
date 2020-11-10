@@ -1,55 +1,29 @@
 page{
+  width: 100vw;
+  height: 70vh;
   background: #ededed;
-}
-.myHouse{
-  width: 100vw;
-  height: 20vw;
-  background: #fff;
   display: flex;
-  align-items: center;
-}
-.myHouse image{
-  width: 15vw;
-  margin: 10px;
-}
-.arrow{
-  width: 5vw !important;
-  margin: 10px;
-}
-.myHouse text{
-  flex: 1;
-  text-indent: 2em;
-}
-.payChild{
-  width: 100vw;
-  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
 }
-.payMoney{
-  margin-top: 8vw;
-  width: 40vw;
-  height: 40vw;
-  background: linear-gradient(to right top,#71faff,#82a9ff);
-  border-radius: 5vw;
+.payitem{
+  width: 30vw;
+  height: 30vw;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 15px #666666, 
+  -6px -6px 15px #ddd;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #666;
 }
-.payMoney:nth-child(2n-1){
-  margin-left:3vw;
+image{
+  width: 11vw;
+  height: 11vw;
 }
-.payMoney:nth-child(2n){
-  margin-right: 3vw;
-}
-.payMoney text{
-  margin:20px;
+text{
   font-size: 32rpx;
-}
-.payMoney image{
-  width: 80rpx;
+  margin: 5rpx;
 }

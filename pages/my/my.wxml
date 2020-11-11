@@ -36,40 +36,7 @@
 			</view>
 		</view>
 	</view>
-	<!-- 我的订单 -->
-	<view class="order">
-		<view class="order-top">
-			<view class="order-details">
-				<view class="weizhi">
-					<text class="order-top-title">我的订单</text>
-				</view>
-				<view class="weizhi2">
-					<text class="order-top-more">查看更多订单</text>
-					<image class="order-arrow" src="../../images/jiantou.jpg"></image>
-				</view>
-			</view>
-		</view>
-		<view class="order-bottom">
-			<van-row custom-class="icons">
-				<van-col custom-class="icons-col" span="6">
-					<image src="../../images/daifukuan.gif"></image>
-					<view style="font-size:28rpx; color:#6b6967;">待付款</view>
-				</van-col>
-				<van-col custom-class="icons-col" span="6">
-					<image src="../../images/待发货.gif"></image>
-					<view style="font-size:28rpx; color:#6b6967;">待发货</view>
-				</van-col>
-				<van-col custom-class="icons-col" span="6">
-					<image src="../../images/daishouhuo.gif"></image>
-					<view style="font-size:28rpx; color:#6b6967;">待收货</view>
-				</van-col>
-				<van-col custom-class="icons-col" span="6">
-					<image src="../../images/daipingjia.gif"></image>
-					<view style="font-size:28rpx; color:#6b6967;">待评价</view>
-				</van-col>
-			</van-row>
-		</view>
-	</view>
+
 	<!-- 投诉进度 -->
 	<view class="function" bindtap="on_complaint_click">
 		<image class="left-image" src="../../images/投诉.gif"></image>

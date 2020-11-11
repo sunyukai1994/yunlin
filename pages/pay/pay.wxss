@@ -12,7 +12,7 @@ page{
   height: 30vw;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 6px 6px 15px #666666, 
+  box-shadow: 6px 6px 15px #999, 
   -6px -6px 15px #ddd;
   display: flex;
   flex-direction: column;

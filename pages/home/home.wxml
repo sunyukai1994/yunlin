@@ -92,44 +92,7 @@
 			</van-col>
 		</van-row>
 	</view>
-	<!-- 热销商品 -->
-	<view class="hot">
-		<view class="name">
-			<image class="name-image" src="../../images/热销商品.png"></image>
-		</view>
-		<view class="content-list">
-			<view class="list-item" wx:for="{{hot}}" wx:key="item">
-				<image src="{{item.imgUrl}}"></image>
-				<view>{{item.village}}</view>
-				<view class="title">{{item.title}}</view>
-			</view>
-		</view>
 	</view>
-	<!-- 社区头条 -->
-	<view class="Headlines">
-		<view class="Headlines-title">
-			<image class="Headlines-image" src="../../images/社区头条.png"></image>
-		</view>
-		<view class="content">
-			
-			<view class="one">
-				<image class="content-image" src="../../images/toutiao1.jpg"></image>
-				<text>“大数据+智能化”给社会治理带来哪些改变</text>
-			</view>
-			<view class="one">
-				<image class="content-image" src="../../images/toutiao1.jpg"></image>
-				<text>“灯会怎么过”北京这19处灯会灯光秀随你挑</text>
-			</view>
-			<view class="one">
-				<image class="content-image" src="../../images/toutiao1.jpg"></image>
-				<text>打破数字货币的桎梏，区块链到底是向左向右</text>
-			</view>
-		</view>
-		<view class="more" bindtap="on_details_click">
-			<view class="more-tab">查看更多</view>
-		</view>
-	</view>
-</view>
 <!-- Tab标签 -->
 <!-- <van-tabbar active="{{ active }}" active-color="#FF0000" bind:change="onChange">
 	<van-tabbar-item bind:click="Changepages">

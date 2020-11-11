@@ -24,9 +24,10 @@ Page({
     // 获取当前选中的标签的自义定属性index
     let {index}= e.currentTarget.dataset
     // 修改样式
-    let query=wx.createSelectorQuery()
-    let item=wx.createSelectorQuery().selectAll('.payitem')
-    item.fields({ComputedStyle:['boxShow']},res=>{
+    // let query=wx.createSelectorQuery()
+    let item=wx.createSelectorQuery().select('.payitem')
+    console.log(item);
+    item.fields({ComputedStyle:['boxShadow']},res=>{
       console.log(res);  
     }).exec()
 

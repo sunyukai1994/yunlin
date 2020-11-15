@@ -82,6 +82,13 @@
           "id": -1,
           "name": "pages/pay/pay",
           "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
           "scene": null
         }
       ]

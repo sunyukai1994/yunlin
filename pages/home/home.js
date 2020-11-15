@@ -21,6 +21,7 @@ Page({
       { id: 3, imgUrl: "../../images/shangpin3.jpg", village: "膜法世家面膜", title: "￥99.99" },
       { id: 4, imgUrl: "../../images/shangpin2.jpg", village: "多芬兰", title: "￥99.99" }
     ],
+    time:''
   },
 
   onChange(event) {
@@ -80,11 +81,6 @@ Page({
       url: '../notice/notice',
     })
   },
-  on_AccessControl_click(e){
-    wx.navigateTo({
-      url: '../AccessControl/AccessControl',
-    })
-  },
   on_Housekeeping_click(e){
     wx.navigateTo({
       url: '../Housekeeping/Housekeeping',
@@ -100,7 +96,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let d=new Date()
+    let Month=d.getMonth()+1
+    let Day=d.getDate()
+    let Week=d.getDay()+1
+    let timeAll=['',"一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十", "二十一", "二十二", "二十三", "二十四", "二十五", "二十六", "二十七", "二十八", "二十九", "三十", "三十一"]
+    let time=`${timeAll[Month]}月${timeAll[Day]}星期${timeAll[Week]}`;
+    this.setData({
+      time
+    }) 
   },
 
   /**

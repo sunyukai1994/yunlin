@@ -37,7 +37,7 @@
 			<view class="card-top-right">
 				<view class="card-top-right-details">
 					<image class="card-top-right-details-image" src="../../images/汽车.png"></image>
-					<text>农历六月十四星期五</text>
+					<text>{{time}}</text>
 				</view>
 				<view class="tail">汽车尾号4和6</view>
 			</view>
@@ -78,9 +78,9 @@
 				<image src="../../images/fangwu.jpg"></image>
 				<view>房屋出售</view>
 			</van-col>
-			<van-col custom-class="icons-col" span="6" bindtap="on_AccessControl_click">
+			<van-col custom-class="icons-col" span="6" bindtap="">
 				<image src="../../images/menjin.jpg"></image>
-				<view>我的门禁</view>
+				<view>二手售卖</view>
 			</van-col>
 			<van-col custom-class="icons-col" span="6" bindtap="on_Housekeeping_click">
 				<image src="../../images/jiazheng.jpg"></image>

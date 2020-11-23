@@ -3,7 +3,8 @@ App({
   onLaunch: function () {
     //云开发环境初始化
     wx.cloud.init({
-      env:"dtcs2-f9ffae"
+      // env:"dtcs2-f9ffae",
+      env:"shequ-inksnow"
     })
     
     // 获取微信用户信息openid

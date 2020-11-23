@@ -1,35 +1,22 @@
 // pages/notice/notice.js
+let db=wx.cloud.database()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    banner: [
-      {
-        "image": "../../images/20161111192655_vNMdL.gif",
-      },
-      {
-        "image": "../../images/timg.jfif",
-      },
-    ],
+   dataList:[]
   },
-  on_details_click(e){
-    wx.navigateTo({
-      url: '../details/details',
+  getData(){
+    db.collection('Annoncement').get().then(res=>{
+      console.log(res);
+      
+      this.setData({
+        dataList:res.data
+      })
     })
+    
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+this.getData()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },

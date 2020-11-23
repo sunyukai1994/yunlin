@@ -1,94 +1,10 @@
-<!--pages/notice/notice.wxml-->
-<view class="notice">
-	<!-- 轮播图 -->
-	<swiper class="two" indicator-color="tgbc(255,255,255,5)" indicator-active-color="#e60012" indicator-dots="true" circular autoplay>
-		<swiper-item wx:for="{{banner}}" wx:key="{{item.id}}">
-			<image src="{{item.image}}"></image>
-		</swiper-item>
-	</swiper>
-	<!-- 公告 -->
-	<view class="form" bindtap="on_details_click">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告1.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">联播+|稳步复苏|习近平为中国经济提出这些“坚决指引”</view>
-				<view class="form-text-bottom">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
+<view class="notice" wx:for="{{dataList}}" >
+	<view class="title">{{item.title}}</view>
+	<view class="content">{{item.content}}
 	</view>
-	<view class="form">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告2.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">七部门：放宽临时外摆限制 允许沿街小店在不影响周边生活的情况下开展摆摊经营</view>
-				<view class="form-text-bottom" style="margin-top: 55rpx;">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
-	</view>
-  <view class="form">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告3.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">@党员干部，习近平反复强调提高社区效能的关键是党的领导</view>
-				<view class="form-text-bottom">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
-	</view>
-  <view class="form">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告4.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">邵永灵：美国核武保护世界？曾欲对华发动核打击</view>
-				<view class="form-text-bottom">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
-	</view>
-  <view class="form">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告5.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">中方的善意不大可能换来特朗普政府积极回应</view>
-				<view class="form-text-bottom">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
-	</view>
-  <view class="form">
-		<view class="form-inside">
-			<view class="form-image">
-				<image src="../../images/公告6.gif"></image>
-			</view>
-			<view class="form-text">
-				<view class="form-text-title">经党中央批准、国务院批复“中国人民警察节”正式设立 节日在每年1月10日</view>
-				<view class="form-text-bottom" style="margin-top: 55rpx;">
-					<view class="comment">评论847</view>
-					<view class="browse">875<text>的人浏览了</text></view>
-				</view>
-			</view>
-		</view>
+	<!-- <image src="../../images/社区头条.png" mode="widthFix"></image> -->
+	<view class="creData">
+		<text class="person">发布者：{{item.person}}</text>
+		<text class="time">发布时间{{item.creTime}}</text>
 	</view>
 </view>

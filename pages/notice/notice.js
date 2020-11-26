@@ -1,21 +1,62 @@
 // pages/notice/notice.js
-let db=wx.cloud.database()
+let db = wx.cloud.database()
+let that;
 Page({
   data: {
-   dataList:[]
+    // 数据列表
+    dataList: [],
+    conOk:true,
+    // demo:"确认收到"
   },
-  getData(){
-    db.collection('Annoncement').get().then(res=>{
-      console.log(res);
-      
-      this.setData({
-        dataList:res.data
+  // 获取数据
+  getData() {
+    db.collection('Annoncement').get().then(res => {
+      // console.log(res);
+      res.data.map(i => {
+        // console.dir(i.creTime)
+        i.creTime = `${i.creTime.getFullYear()}年${i.creTime.getMonth()}月${i.creTime.getDate()}号`
+        // i.conOk=true
       })
-    })
     
+      this.setData({
+        dataList: res.data
+      })
+      // callback ? callback(payload):''
+    })
+
   },
+  // 确认收到
+  confirmTap(e) {
+    // console.log(e);
+    
+    let confirm;
+    this.data.dataList.map(i=>{
+      if(i._id==e.target.dataset.id){
+       confirm=i.confirm
+      }
+    })
+   confirm++
+    db.collection('Annoncement').doc(e.target.dataset.id).update({
+      data: {
+        confirm
+      },
+      success: function (res) {
+        // that.getData(that.isconOk,e.target.dataset.id)
+        that.setData({
+          conOk:false
+        })
+      },
+      error(err){
+        console.log(err);
+        
+      }
+    })
+   
+  },
+
   onLoad: function (options) {
-this.getData()
+    that=this;
+    this.getData()
   },
   onReady: function () {
 

@@ -9,14 +9,25 @@ page {
   display: flex;
   flex-direction: column;
 }
-
+/* 顶部 */
 .title {
   font-weight: bold;
   margin: 1vh 0;
 }
-
+.makeTop{
+  font-size: 24rpx;
+  padding: 10rpx;
+ background: #ddd;
+  color: #fff;
+  border-radius: 10rpx;
+  float: right;
+}
+.isTop{
+  background: orange;
+}
+/* 下部 */
 .person,
-.time {
+.release{
   font-size: 30rpx;
 }
 
@@ -32,5 +43,19 @@ page {
   justify-content: space-between;
   padding: 0 1vw;
   box-sizing: border-box;
+  color: #999;
+}
+/* 收到 */
+.confirm,.confirmOk{
+  width: 80vw;
+  font-size: 56rpx;
+  margin: 0 auto;
+  text-align: center;
+  background: orange;
+  color: #fff;
+  border-radius: 56rpx;
+}
+.confirmOk{
+  background: #eee;
   color: #999;
 }

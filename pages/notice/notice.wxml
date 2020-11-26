@@ -1,10 +1,14 @@
 <view class="notice" wx:for="{{dataList}}" >
-	<view class="title">{{item.title}}</view>
-	<view class="content">{{item.content}}
+	<view class="title">{{item.title}}
+		<text class="makeTop">置顶</text>
 	</view>
-	<!-- <image src="../../images/社区头条.png" mode="widthFix"></image> -->
 	<view class="creData">
 		<text class="person">发布者：{{item.person}}</text>
-		<text class="time">发布时间{{item.creTime}}</text>
+		<text class="release">{{item.creTime}}</text>
 	</view>
+	<view class="content">{{item.content}}
+	</view>
+	<image src="../../images/社区头条.png" mode="widthFix"></image>
+	<view class="confirm" bindtap="confirmTap" data-id="{{item._id}}" wx:if="{{conOk}}" >确认收到</view>
+	<view class="confirmOk" wx:else>已收到</view>
 </view>

@@ -1,6 +1,6 @@
 <view class="notice" wx:for="{{dataList}}" >
 	<view class="title">{{item.title}}
-		<text class="makeTop">置顶</text>
+		<text class="makeTop {{item.makeTop?'isTop':''}}" bindtap="changeMakeTop" data-id="{{item._id}}">置顶</text>
 	</view>
 	<view class="creData">
 		<text class="person">发布者：{{item.person}}</text>

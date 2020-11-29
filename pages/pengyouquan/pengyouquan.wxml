@@ -1,60 +1,46 @@
-<!--pages/pengyouquan/pengyouquan.wxml-->
-<view class="pengyouquan">
-	<!-- 头部背景 -->
-	<view class="top">
-		<image src="../../images/20161111192655_vNMdL.gif" />
-	</view>
-	<!-- 账号信息 -->
-	<view class="user">
-		<text>空白</text>
-		<image src="../../images/touxiang1.jpg" />
-	</view>
-	<!-- 朋友圈 -->
-	<view class="details">
-		<view class="details-head">
-			<image src="../../images/touxiang1.jpg" />
-			<text>于浩</text>
-		</view>
-		<!-- 内容 -->
-		<view class="content">
-			<image src="../../images/1582275421702.JPG" />
-			<image src="../../images/touxiang1.jpg" />
-		</view>
-		<!-- 时间 -->
-		<view class="time">
-			<text>26分钟前</text>
-			<image src="../../images/diandian.gif" catchtap="dianji" />
-			<view class="hei {{tab?'hidden':'show'}}">
-				<view class="left">
-					<image src="../../images/评论.png" />
-					<text>评论</text>
+
+<!--pages/findList/findList.wxml-->
+<image class="xxiangji" catchtap="xxiangji" src="../../images/home2.png"></image>
+<image class="top_img" src="../../images/20161111192655_vNMdL.gif"></image>
+<view class="userinfo-avatar">
+	<open-data type="userAvatarUrl"></open-data>
+</view>
+<view class="userNickName">
+	<open-data type="userNickName"></open-data>
+</view>
+ 
+<view class="centent" wx:for='{{list}}' wx:key="">
+	<view class="item">
+		<image class="head" src="../../images/toutiao1.jpg"></image>
+		<view style="width:90%">
+			<view class="name">陆斌</view>
+			<image class="img" mode="widthFix" src="../../images/1582275421702.JPG"></image>
+			<view class="">
+ 
+				<view class="tanchuang" wx:if='{{tanchuang_show}}' animation="{{animationData}}">
+					<view class="p_r" catchtap="">
+						<image class="aixin" mode="widthFix" src="../../images/喜欢.png"></image>
+						<view>{{a?'取消':'点赞'}}</view>
+					</view>
+					<view class="p_r" catchtap="up_comment">
+						<image class="pinglun" mode="widthFix" src="../../images/租房 (1).png"></image>
+						<view>评论</view>
+					</view>
 				</view>
-				<view class="right">
-					<image src="../../images/喜欢.png" />
-					<text>赞</text>
+ 
+				<image class="comment" catchtap="show_tanchuang" src="../../images/待发货.gif"></image>
+				<view class="time">14分钟前</view>
+ 
+				<view class="pl_block">
+					<view class="ax_item">
+						<image class="aixin2" mode="widthFix" src="../../images/汽车.png"></image>
+						<view class="ax_name">a_靖</view>
+					</view>
+					<view class="pl_item">
+						<view class="pl_name">a_靖: <text>高考加油</text></view>
+					</view>
 				</view>
 			</view>
-		</view>
-		<view class="pinglun">
-			<view>空白：这个评论很赞！</view>
-			<view>空白：这个评论很赞！</view>
-		</view>
-	</view>
-	<view class="details">
-		<view class="details-head">
-			<image src="../../images/touxiang1.jpg" />
-			<text>于浩</text>
-		</view>
-		<view class="content">
-			<image src="../../images/1582275421702.JPG" />
-			<image src="../../images/touxiang1.jpg" />
-		</view>
-		<view class="time">
-			<text>26分钟前</text>
-			<image src="../../images/diandian.gif" catchtap="dianji1" />
-		</view>
-		<view class="pinglun">
-			<view>空白：这个评论很赞！</view>
 		</view>
 	</view>
 </view>

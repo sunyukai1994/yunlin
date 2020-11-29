@@ -83,6 +83,12 @@
         {
           "name": "pages/notice/notice",
           "pathName": "pages/notice/notice",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pengyouquan/pengyouquan",
+          "pathName": "pages/pengyouquan/pengyouquan",
           "scene": null
         }
       ]

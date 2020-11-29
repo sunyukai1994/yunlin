@@ -1,133 +1,144 @@
-/* pages/pengyouquan/pengyouquan.wxss */
-.pengyouquan{
+/* pages/findList/findList.wxss */
+page{
+  background-color: white;
+}
+.top_img{
   width: 100%;
+  height: 480rpx;
 }
-.top image{
-  width: 100%;
+ 
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  position: absolute;
+  right: 12rpx;
+  top: 330rpx;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 12rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-.user{
-  margin-top: -50px;
-  margin-left: 480rpx;
+ 
+.userNickName {
+  /* color: #fff; */
+  font-size: 32rpx;
+  color: white;
+  border-radius:40%;
+  position: absolute;
+  right: 192rpx;
+  top: 420rpx;
 }
-.user image{
-  width: 120rpx;
-  height: 120rpx;
-  border-radius: 25rpx;
+.xxiangji{
+  position: fixed;
+  right: 36rpx;
+  top: 36rpx;
+  width: 60rpx;
+  height: 60rpx;
+  z-index: 999;
 }
-.user text{
-  position: relative;
-  top: -60rpx;
-  left: -20rpx;
-  color: #fff;
-  font-size: 35rpx;
+.centent{
+  margin-top: 100rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #f2f2f2;
 }
-.details{
-  width: 92%;
-  height: 350rpx auto;
-  margin: 20rpx auto;
-  border-bottom: 1rpx solid #ccc;
-}
-.details-head{
-  display: flex;
-  align-items: center;
-}
-.details-head image{
+.head{
   width: 90rpx;
   height: 90rpx;
-  border-radius: 25rpx;
+  border-radius: 10rpx;
+  margin: 16rpx;
 }
-.details-head text{
-  margin-left: 30rpx;
+.item{
+  display: flex;
+  flex-direction: row;
 }
-.content{
-  width: 60%;
-  height: 200rpx;
-  margin-left: 130rpx;
+.name{
+ font-size: 32rpx;
+ /* font-weight: 600; */
+ color: #546689;
+ margin-top: 20rpx;
 }
-.content image{
-  width: 180rpx;
-  height: 180rpx;
-  margin-right: 20rpx;
-  border-radius: 25rpx;
+.img{
+  width:220rpx;
+  margin-top: 20rpx;
+  border-radius: 4rpx;
 }
 .time{
-  width: 78%;
-  height: 18px;
-  margin-left: 128rpx;
-  margin-top: -5rpx;
-  line-height: 20px;
-  font-size: 25rpx;
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
 }
-.time image{
-  float: right;
-  width: 25px;
-  height: 18px;
+.comment{
+  background-color: #F7F8F8;
+  color: #546689;
+  font-size: 60rpx;
+  border-radius: 8rpx;
+  width: 70rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  line-height: 35rpx;
+  text-align: center;
+}
+.tanchuang{
+  display: flex;
+  flex-direction: row;
+  background-color: #484848;
+  border-radius: 8rpx;
+  position: absolute;
+  right: 112rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  margin-top: -20rpx;
+  color: white;
+  width: 360rpx;
+  font-size: 28rpx;
+}
+.aixin{
+  width: 42rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 10rpx;
 }
 .pinglun{
-  width: 78%;
-  height: 18px auto;
-  margin: 10rpx 0 0 130rpx;
-  background-color: rgb(243,243,243);
-  font-size: 20rpx;
-  margin-bottom: 15rpx;
-  border-radius: 10rpx;
+  width: 42rpx;
+  margin-top: 20rpx;
+  margin-left: 70rpx;
+  margin-right: 10rpx;
+ 
 }
-.pinglun view{
-  padding-left: 15rpx;
-  line-height: 1.8;
+.aixin2{
+  width: 32rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 10rpx;
 }
-.hei{
-  /* display: flex; */
-  width: 300rpx;
-  height: 60rpx;
-  float: right;
-  background-color: #4c4c4c;
-  margin-right: 30rpx;
-  margin-top: -15rpx;
-  border-radius: 5px;
+.ax_item{
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;   flex-wrap:wrap
 }
-.hei .left{
-  /* border-left: 1px solid #444444; */
-  display: flex;
-  align-items: center;
-  float: right;
-  width: 50%;
-  height: 60rpx;
-  /* background-color: cornflowerblue; */
+.ax_name{
+  height: 70rpx;
+  line-height: 70rpx;
 }
-.hei .right{
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 60rpx;
-  /* background-color: cyan; */
+.pl_block{
+  background-color: #F7F7F7;
+  border-radius: 8rpx;
+  width: 95%;
+  margin-top: 30rpx;
+  color: #546689;
 }
-.left image{
-  margin-left: 10rpx;
-  width: 40rpx;
-  height: 40rpx;
+.pl_item{
+  display: flex;   flex-wrap:wrap
 }
-.right image{
-  margin-left: 20rpx;
-  width: 40rpx;
-  height: 40rpx;
+.pl_name{
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 40rpx;
+  margin-right: 10rpx;
 }
-.hei text{
-  color: #fff;
-  font-size: 33rpx;
-  margin-left: 10rpx;
-}
-.right text{
-  margin-left: 10rpx;
-}
-
-/* .btn{
-  display: flex;
-} */
-
-.show{
-  display: block;
-}
-.hidden{
-  display: none;
+.pl_name text{
+  color: black;
 }

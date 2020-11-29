@@ -1,72 +1,40 @@
-// pages/pengyouquan/pengyouquan.js
+// pages/findList/findList.js
 Page({
-
+ 
   /**
    * 页面的初始数据
    */
   data: {
-    tab:true,
+    tanchuang_show:false,
+    list:[1,1,1],
   },
-  dianji:function(){
-    var that = this
-    this.setData({
-      tab:that.data.tab?false:true
-   })
-  },
-
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+ 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  xxiangji(){
+    wx.showActionSheet({
+      itemList: ['发布图文', '发布视频'],
+      success (res) {
+        console.log(res.tapIndex)
+        if(res.tapIndex==0){
+ 
+        }else{
+ 
+        }
+      },
+      fail (res) {
+        console.log(res.errMsg)
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  show_tanchuang(){
+    var tanchuang_show=!this.data.tanchuang_show
+    this.setData({
+      tanchuang_show
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

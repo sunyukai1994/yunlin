@@ -3,7 +3,7 @@ Component({
   data: {
     selected: 0,
     color: "#7A7E83",
-    selectedColor: "#d81e06",
+    selectedColor: "#eb6841",
     foot: [{
       "url": "../home/home",
       "iconPath": "../images/home2.png",

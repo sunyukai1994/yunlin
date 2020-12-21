@@ -9,11 +9,11 @@
 
 <!--登录按钮-->
 <view class="my">
-	<button class="denglu" wx:if="{{is_login}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+	<button class="denglu" wx:if="{{!is_login}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
 	<view class="top" wx:else>
-		<image class="userinfo-avatar" src="{{userInfo.pic}}" mode="cover"></image>
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
 		<view class="right">
-			<view class="userinfo-nickname">{{userInfo.nick_name}}
+			<view class="userinfo-nickname">{{userInfo.nickName}}
 				<view class="guanzhu">业主</view>
 			</view>
 			<view class="right-images">

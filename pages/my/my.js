@@ -8,7 +8,7 @@ Page({
    */
   data: {
     userInfo: {},   //用户信息
-    is_login: true,    //登陆状态
+    is_login: false,    //登陆状态
     is_phone: false,    //是否需要获取微信绑定手机号注册
     user_list: [],    //已注册用户信息表
   },
@@ -60,15 +60,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-
-
-
-
-    return
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        is_login: true
       })
     } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
@@ -76,7 +71,7 @@ Page({
       app.userInfoReadyCallback = res => {
         this.setData({
           userInfo: res.userInfo,
-          hasUserInfo: true
+          is_login: true
         })
       }
     } else {
@@ -86,7 +81,7 @@ Page({
           app.globalData.userInfo = res.userInfo
           this.setData({
             userInfo: res.userInfo,
-            hasUserInfo: true
+            is_login: true
           })
         }
       })
@@ -94,58 +89,72 @@ Page({
   },
 
   // 微信授权登录
-  getUserInfo: function (e) {
+  getUserInfo(e) {
     wx.showLoading({
-      title: '',
+      title: '正在登录',
     })
-    const userInfo = e.detail.userInfo,
-    user_list = this.data.user_list,
-    arrayes = user_list.some((value, index) => {
-      return value.open_id == app.globalData.openId
+    const userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      is_login: true
     })
-    if (arrayes) {
-      console.log('已注册过的用户直接登陆',e)
-      wx.setStorageSync('openId', app.globalData.openId)
-      wx.setStorageSync('userInfo', userInfo)
-      wx.showToast({
-        title: '登陆成功',
-      })
-      this.setData({
-        userInfo,
-        is_login: false,
-      })
-    } else {
-      console.log('未注册过的用户，进行注册')
-      app.globalData.FunCloud.add({
-        data: {
-          open_id: app.globalData.openId,
-          nick_name: userInfo.nickName,
-          pic: userInfo.avatarUrl,
-          sex: userInfo.gender,   //1男2女
-        },
-        success: (res) => {
-          wx.setStorageSync('openId', app.globalData.openId)
-          userInfo.nick_name = userInfo.nickName,
-          userInfo.pic = userInfo.avatarUrl,
-          userInfo.sex = userInfo.gender,   //1男2女
-          wx.setStorageSync('userInfo', userInfo)
-          wx.showToast({
-            title: '登陆成功',
-          })
-          this.setData({
-            userInfo,
-            is_login: false,
-          })
-        },
-        error: (e) => {
-          console.log('失败', e)
-        }
-      })
-      return
-      this.setData({
-        is_phone: true,
-      })
-    }
+    wx.hideLoading({
+      success: (res) => {
+        
+      },
+    })
+    // let user_list = this.data.user_list
+    // console.log(user_list);
+    
+    // let arrayes = user_list.some((value, index) => {
+    //   return value.open_id == app.globalData.openId
+    // })
+    // if (arrayes) {
+    //   console.log('已注册过的用户直接登陆',e)
+    //   wx.setStorageSync('openId', app.globalData.openId)
+    //   wx.setStorageSync('userInfo', userInfo)
+    //   wx.showToast({
+    //     title: '登陆成功',
+    //   })
+    //   this.setData({
+    //     userInfo,
+    //     is_login: false,
+    //   })
+    // } else {
+    //   console.log('未注册过的用户，进行注册')
+    //   console.log(app.globalData);
+      
+    //   app.globalData.FunCloud.add({
+    //     data: {
+    //       open_id: app.globalData.openId,
+    //       nick_name: userInfo.nickName,
+    //       pic: userInfo.avatarUrl,
+    //       sex: userInfo.gender,   //1男2女
+    //     },
+    //     success: (res) => {
+
+    //       wx.setStorageSync('openId', app.globalData.openId)
+    //       userInfo.nick_name = userInfo.nickName,
+    //       userInfo.pic = userInfo.avatarUrl,
+    //       userInfo.sex = userInfo.gender,   //1男2女
+    //       wx.setStorageSync('userInfo', userInfo)
+    //       wx.showToast({
+    //         title: '登陆成功',
+    //       })
+    //       this.setData({
+    //         userInfo,
+    //         is_login: false,
+    //       })
+    //     },
+    //     error: (e) => {
+    //       console.log('失败', e)
+    //     }
+    //   })
+      
+    //   this.setData({
+    //     is_phone: true,
+    //   })
+    // }
   },
 
   // 获取用户微信绑定的手机号进行注册

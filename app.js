@@ -44,6 +44,8 @@ App({
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
               }
+              console.log(this.globalData);
+              
             }
           })
         }
@@ -53,5 +55,6 @@ App({
   globalData: {
     userInfo: null,
     openId: null,   //用户openid
+    FunCloud:[]
   }
 })
